@@ -55,6 +55,7 @@ The data contains the different attributes of customers' booking details. The de
 * **no_of_special_requests:** Total number of special requests made by the customer (e.g. high floor, view from the room, etc)
 * **booking_status:** Flag indicating if the booking was canceled or not.
 
+### The Project is divided into 2, The EDA and the Model Building.
 - **For EDA, please visit EDA for Hotel Booking Cancelation Analysis.ipynb. The pdf format is also available**
-- **For model building with scikit learn, please visit Hotel Cancellation Prediction.ipynb**
+- **For model building with scikit learn, please visit Hotel_Cancellation_Prediction_Model_Building.ipynb**
 - **For EDA and model building with spark, please visit Hotel Booking Prediction-with spark MLLib.ipynb**
