@@ -1,4 +1,4 @@
-HOTEL CANCELLATION PREDICTION
+
 
 # **Project - Hotel Booking Cancellation Prediction**
 
@@ -21,7 +21,7 @@ This pattern of cancellations of bookings impacts a hotel on various fronts:
 
 ### **Objective**
 
-This increasing number of cancellations calls for a Machine Learning based solution that can help in predicting which booking is likely to be canceled. INN Hotels Group has a chain of hotels in Portugal - they are facing problems with this high number of booking cancellations and have reached out to your firm for data-driven solutions. You, as a Data Scientist, have to analyze the data provided to find which factors have a high influence on booking cancellations, build a predictive model that can predict which booking is going to be canceled in advance, and help in formulating profitable policies for cancellations and refunds.
+This increasing number of cancellations calls for a Machine Learning based solution that can help in predicting which booking is likely to be canceled. ABC Hotels Group has a chain of hotels in Nigeria - they are facing problems with this high number of booking cancellations and have reached out to your firm for data-driven solutions. As a Data Scientist, I analyzed the data provided to find which factors have a high influence on booking cancellations, build a predictive model that can predict which booking is going to be canceled in advance, and help in formulating profitable policies for cancellations and refunds.
 
 
 ### **Data Description**
@@ -55,6 +55,6 @@ The data contains the different attributes of customers' booking details. The de
 * **no_of_special_requests:** Total number of special requests made by the customer (e.g. high floor, view from the room, etc)
 * **booking_status:** Flag indicating if the booking was canceled or not.
 
-For EDA, please visit EDA for Hotel Booking Cancelation Analysis.ipynb. The pdf format is also available
-For model building with scikit learn, please visit Hotel Cancellation Prediction.ipynb
-For EDA and model building with spark, please visit Hotel Booking Prediction-with spark MLLib.ipynb
+- **For EDA, please visit EDA for Hotel Booking Cancelation Analysis.ipynb. The pdf format is also available**
+- **For model building with scikit learn, please visit Hotel Cancellation Prediction.ipynb**
+- **For EDA and model building with spark, please visit Hotel Booking Prediction-with spark MLLib.ipynb**
