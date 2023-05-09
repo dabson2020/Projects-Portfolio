@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Hotel Booking</title>
+</head>
+<body style="background: #000;">
+ <div class="login">
+	<h1 style="color:Violet;">Hotel Cancellation prediction</h1>
+
+     <!-- Action is where the data is sent. In our case, predict page.
+     If action is omitted, it assumed to be the current page -->
+    <form action="{{ url_for('predict') }}"method="post">
+    	<input type="text" name="Booking_ID" placeholder="Booking_ID" required="required" /></p>
+        <input type="text" name="no_of_adults" placeholder="no_of_adults" required="required" /><p>
+            <input type="text" name="no_of_children" placeholder="no_of_children" required="required" /></p>
+              <input type="text" name="no_of_weekend_nights" placeholder="no_of_weekend_nights" required="required" /></p>
+              <input type="text" name="no_of_week_nights" placeholder="no_of_week_nights" required="required" /></p>
+            <input type="text" name="lead_time" placeholder="lead_time" required="required" /></p>
+            <input type="text" name="no_of_previous_bookings_not_canceled" placeholder="no_of_previous_bookings_not_canceled" required="required" /></p>
+            <input type="text" name="avg_price_per_room" placeholder="avg_price_per_room" required="required" /></p>
+            
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Cancelation</button></p>
+    </form>
+
+   <br>
+   <br>
+   <h4 style="color:Violet;">
+
+</body>
+</html>
+
