@@ -1,1 +1,1 @@
-Exploratory and Predictive Analysis with python and Machine learning
+This project portfolio contains different machine learning and Deep learning projects. This projects are real world with real data projects. It includes classification projects, advance regression project and deep learning projects. Each project includes extensive data exploratory analysis with visualization and reports.
