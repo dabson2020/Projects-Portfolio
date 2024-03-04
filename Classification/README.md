@@ -19,7 +19,8 @@ Due to inflation, the energy price has increased in the United Kingdom. The gove
 About 26 features are categorized into the 4 groups above, which are explored and analyzed.
 
 The project is divided into two:
-**Classification Problem**: With these features, we are to determine if a consumer is having difficulties with increasing energy prices or not. This is a **Classification problem**. The target variable and prediction is the True (1) value if the customer is having difficulties with the increasing energy prices and False (0) if vice versa.
+
+**Classification Problem**: With these features, we are to determine if a consumer is having difficulties with increasing energy prices or not. . The target variable and prediction is the True (1) value if the customer is having difficulties with the increasing energy prices and False (0) if vice versa.
 
 The following processes were considered:
 
@@ -27,6 +28,7 @@ The following processes were considered:
 - **Data Cleaning and preprocessing**
 - **Feature Engineering**
 - **Model Development and Prediction**
+  
   - The data was split into train and test set
   - The whole data was used for cross-validation with CV = 5. This means that the model will split the data into 5, using 4 folds of the data as training data to train the model and 1 fold as test data to test the model. This will be done five times with different folds as test data. At any point, the test data are different. They help to validate the model and see if the model is generalized and not overfitting or underfitting when unknown (unseen data) is used to test the model.
   - Nine (9) models were developed which include LGBM, XGB, GradientBoost, Random Forest, Quadratic Discriminant, Linear Discriminant, Logistic Regression, and GaussianNB. 
