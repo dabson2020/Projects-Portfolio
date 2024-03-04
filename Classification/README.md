@@ -61,13 +61,14 @@ The following processes were considered:
 - **Data Cleaning and preprocessing**
 - **Feature Engineering**
 - **Model Development and Prediction**
-  - Six Regression models were developed which include: Linear regression, LassoLarsCV, Ridge, Decision Tree, Random Forest and Gradient Boosting Regressors
+  - Six Regression models were developed which include: Linear regression, LassoLarsCV, Ridge, Decision Tree, Random Forest and Gradient gradient-boosting regressors
   The computed metrics for model performance are the R2 score and Mean Squared Error (MSE). 
 
   The table for the models' performance is shown below.
-  ![alt text](image-2.png)
+  
 
   Gradient Boost outperformed other regressors with an R2 score of 0.80 with a visual representation shown below:
-  ![alt text](image-3.png)
+  ![image](https://github.com/dabson2020/Projects-Portfolio/assets/45830157/8477e28c-d142-402a-84f0-32ac62969917)
+
 
 
