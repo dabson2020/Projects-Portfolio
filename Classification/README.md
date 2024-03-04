@@ -9,7 +9,7 @@ The Project Portfolio includes Classification, Advanced Regression Techniques, D
 
 ## :thumbsup: Projects
 
-**1. Energy Prices Prediction in the United Kingdom**:
+## 1. Energy Prices Prediction in the United Kingdom:
 
 Due to inflation, the energy price has increased in the United Kingdom. The government wants to determine the families and individuals who cannot meet this price increase. There are many factors (features) here to determine or predict the inability to meet up with energy prices. These features are categorized into four (4):
   - Temperature: The weather of a day could have a significant effect on the energy consumption by consumers. In winter, the temperature is cold, and to keep warm, energy is consumed through the heating system. During summer, the temperature rises and as such, the use of the heating system is at its minimum or not in use at all. But due to high temperatures, there is a need to drop the temperature by air-conditioning. Both situations may lead to an increase in energy consumption.
@@ -74,4 +74,118 @@ The following processes were considered:
   ![image](https://github.com/dabson2020/Projects-Portfolio/assets/45830157/8477e28c-d142-402a-84f0-32ac62969917)
 
 
+## 2. Travelers' Experience Prediction (Hackathon)
+This problem statement is based on the Shinkansen Bullet Train in Japan, and passengers’ experience with that mode of travel. This machine learning exercise aims to determine the relative importance of each parameter with regards to their contribution to the passengers’ overall travel experience. The dataset contains a random sample of individuals who travelled on this train. The on-time performance of the trains along with passenger information is published in a file named **Traveldata_train.csv**.  These passengers were later asked to provide their feedback on various parameters related to the travel along with their overall experience. These collected details are made available in the survey report labelled **Surveydata_train.csv**.
 
+In the survey, each passenger was explicitly asked whether they were satisfied with their overall travel experience or not, and that is captured in the data of the survey report under the variable labelled **Overall_Experience**. 
+
+The objective of this problem is to understand which parameters play an important role in swaying passenger feedback towards a positive scale. You are provided test data containing the travel data and the survey data of passengers. Both the test data and the train data are collected at the same time and belong to the same population.
+
+### The Goal
+- We are to determine the features that play important roles in swaying the passenger feedback towards positive
+- To predict whether a passenger was satisfied or not considering his/her overall experience of traveling on the Shinkansen Bullet Train (A Classification Problem)
+
+**Dataset:**
+
+The problem consists of 2 separate datasets: Travel data & Survey data. Travel data has information related to passengers and attributes related to the Shinkansen train, in which they travelled. The survey data is aggregated data of surveys indicating the post-service experience. You are expected to treat both these datasets as raw data and perform any necessary data cleaning/validation steps as required.
+
+The data has been split into two groups and provided in the Dataset folder. The folder contains both train and test data separately.
+
+Train_Data
+Test_Data
+
+Target Variable: Overall_Experience (1 represents ‘satisfied’, and 0 represents ‘not satisfied’)
+
+The training set is used to build machine learning model. The training set has labels for the target column - Overall_Experience.
+
+The testing set is used to see how well your model performs on unseen data. For the test set, it is expected to predict the ‘Overall_Experience’ level for each participant.
+
+**Evaluation Criteria:**
+
+Accuracy Score: The evaluation metric is simply the percentage of predictions made by the model that turned out to be correct. This is also called the accuracy of the model. It will be calculated as the total number of correct predictions (True Positives + True Negatives) divided by the total number of observations in the dataset.
+ 
+In other words, the best possible accuracy is 100% (or 1) and the worst possible accuracy 0%.
+
+**Note** : In classification, the class of interest is considered the positive class.
+
+## :thumbsup -> Solution
+
+The following processes were carried out
+
+- Loading of Data
+- Data Description
+- Exploratory Data Analysis
+  - Univariate Analysis
+- Deep Learning Models
+  - Split data into train and test set
+  - Developed 6 Deep learning models
+    - Model 1 has an accuracy of 55% with F1-Score of 71%
+    - Model 2: Added more hidden layers. Model accuracy is 88% with F1-Score of 89%. - The model improved significantly compared with model 1 with an accuracy of 88% as against 55% of model 1. f1 score improved significantly as well from 71% to 89%. The model is not overfitting and well generalized. As the number of layers in the neural network has increased, we can see that the macro F1 score has increased, and the False positive percentage has decreased. 
+    - Model 3 Batch Normalization techniques: There is a lot of noise in the model, and it and seems to have overfitted on the training data because there is a significant difference in performance between train and validation. 
+    
+    - Random Search CV:
+
+    Some important hyperparameters to look out for while optimizing neural networks are:
+
+    * Type of Architecture
+
+    * Number of Layers
+
+    * Number of Neurons in a layer
+
+    * Regularization hyperparameters
+
+    * Learning Rate
+
+    * Type of Optimizer
+
+    * Dropout Rate
+
+    - Using keras-tuner, the model performance is 88% accuracy and 89% F1-score.
+- Other machine Learning Models:
+  - **Logistic Regression**: Accuracy is 68% while F1-score is 72% on train data. On test data, the accuracy is 69% wuth 72% F1-score. No significant difference.
+  - **Support Vector Machine (SVM)** :
+    - SVM with Linear Kernel: Accuracy of 76% and F1-Score of 79% on train data. On test data, accuracy and F1-score are the same as result of the training data
+    - VM with RBF kernel: Accuracy of 92% and F1-Score of 93% on train data. On test data, both the accuracy and the F1-score are 92% respectively.
+  - **Decision Tree**: Accuracy of 100% and F1-Score of 100% on train data. On test data, the accuracy is 92% and the F1-score is 93%. Decision  Tree model tends to overfit, hence we tune the hyperparaters with Grid Search CV to aviod overfitting.
+    - With the Grid Search CV, the model accuracy on train data is 89% with F1-score 0f 90% while the model accuracy of test data is 88% with F1-Score of 90%. This is a more generalized Decision Tree Model.
+    - Visualizing the decision tree below:
+
+    ![alt text](image-4.png)
+
+    and feature importance of the model:
+
+    ![alt text](image-5.png)
+
+    - **Observations**
+
+      *  After tuning the model, we found out about 4 of the features having higher relative importance.
+
+      * We observe that the 4 most important features that describes the traveller's satisfaction are:
+        * Onboard Entertainment
+        * Seat Comfort
+        * Ease of online Booking
+        * online Support
+
+  - **Random Forest**Accuracy of 100% and F1-Score of 100% on train data. On test data, the accuracy is 94% and the F1-score is 95%. 
+    -**Observation**
+      - The model seem to be overfitting the training data as the model performance reduced on the test data as compared with training data.
+      - Although the model is overfitting, with a F1 score of 0.95 on class 1, it has a better performance compared with Logistic Regression and SVM.
+      - The parameters of the random forest should be tuned to reduce overfitting.
+
+      -Feature importance from Random Forest Model
+
+      ![alt text](image-6.png)
+
+      - **Observation**
+
+      - The Random Forest further verifies the results from the decision tree, that the 4 most important features are OnBoard Entertainment, Seat Comfort, Ease of online Booking and Online Support
+      - OnBoard Entertainment is most important feature. If the OnBoard Entertainment is great, the travellers are mosre likely to be satisfied.
+      - Seat comfortability is also another very important feature to improve traveller's satisfaction
+      - The model **is not bias** as it takes into consideration more important features compared with the decision tree model
+
+      _ Tuning the parameters of the Random Forest Model with Grid Search CV, the model performance is 90% accuracy and 91% F1-Score on both train and test data. Now the model is not overfitting ans is well generalized.
+
+      Model Performance on unknown data:
+
+      When tested on unknown data, the model accuracy is 93.582%
