@@ -9,7 +9,7 @@ The Project Portfolio includes Classification, Advanced Regression Techniques, D
 
 ## :thumbsup: Projects
 
-**Energy Prices Prediction in the United Kingdom**:
+**1. Energy Prices Prediction in the United Kingdom**:
 
 Due to inflation, the energy price has increased in the United Kingdom. The government wants to determine the families and individuals who cannot meet this price increase. There are many factors (features) here to determine or predict the inability to meet up with energy prices. These features are categorized into four (4):
   - Temperature: The weather of a day could have a significant effect on the energy consumption by consumers. In winter, the temperature is cold, and to keep warm, energy is consumed through the heating system. During summer, the temperature rises and as such, the use of the heating system is at its minimum or not in use at all. But due to high temperatures, there is a need to drop the temperature by air-conditioning. Both situations may lead to an increase in energy consumption.
