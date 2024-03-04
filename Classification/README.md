@@ -20,7 +20,7 @@ About 26 features are categorized into the 4 groups above, which are explored an
 
 The project is divided into two:
 
-**Classification Problem**: With these features, we are to determine if a consumer is having difficulties with increasing energy prices or not. . The target variable and prediction is the True (1) value if the customer is having difficulties with the increasing energy prices and False (0) if vice versa.
+**Classification Problem**: With these features, we are to determine if a consumer is having difficulties with increasing energy prices or not. The target variable and prediction is the True (1) value if the customer is having difficulties with the increasing energy prices and False (0) if vice versa.
 
 The following processes were considered:
 
@@ -41,8 +41,30 @@ The following processes were considered:
 
   The table below displays the performance of each trained model on test data.
   ![image](https://github.com/dabson2020/Projects-Portfolio/assets/45830157/d1792e76-7645-4b35-a0a9-7a5dade84075)
-
+  Here is a visual representation of the model performance
+  ![alt text](image.png)
 
   With the accuracy of 89%, 89% on cross-validation score on test data, and 90.1% accuracy on unknown data, the model with the best performance is the **XGB Classifier**
+
+
+**Regression Problem**:
+
+The energy company desire to predict the variation in the annual expenditure that a customer is going to have due to the increase of the energy cost. If the customer is going to spend more in the coming year, the price is positive, but if the customer is spending less, then the value will be
+negative. With the provision of historic data, a prediction on the expenditure is carried out using machine learning technique. This predicted value on the historical data is compared with the actual value and the technique/model with the lowest mean squared error (the metric utilized to determine the performance of the model) is utilized for prediction of the expenditure over unknown or future data. The machine learning Regressors are utilized to create the model. We use Regression techniques because the predicted target values are numeric.
+
+The following processes were considered:
+
+- **Data ingestion/Loading of Data**
+- **Data Cleaning and preprocessing**
+- **Feature Engineering**
+- **Model Development and Prediction**
+  - Six Regression model were developed which includes: Linear regression, LassoLarsCV, Ridge, Decision Tree, Random Forest and Gradiant Boosting Regressors
+  The computed metrics for model performance are R2 score and Mean Squared Error (MSE). 
+
+  The table for the models' performance are shown below.
+  ![alt text](image-2.png)
+
+  Gradient Boost outperformed other regressors with an R2 score of 0.80 with a visual representation shown below:
+  ![alt text](image-3.png)
 
 
