@@ -45,7 +45,8 @@ The following processes were considered:
   
   Here is a visual representation of the model performance
   
-  ![alt text](image.png)
+  ![image](https://github.com/dabson2020/Projects-Portfolio/assets/45830157/d657646c-9e04-4ac9-b390-b2f8cb11304d)
+
 
   With the accuracy of 89%, 89% on cross-validation score on test data, and 90.1% accuracy on unknown data, the model with the best performance is the **XGB Classifier**
 
@@ -65,7 +66,8 @@ The following processes were considered:
   The computed metrics for model performance are the R2 score and Mean Squared Error (MSE). 
 
   The table for the models' performance is shown below.
-  
+  ![image](https://github.com/dabson2020/Projects-Portfolio/assets/45830157/ef97836b-5950-4308-8cdd-52ce0e189a75)
+
 
   Gradient Boost outperformed other regressors with an R2 score of 0.80 with a visual representation shown below:
   ![image](https://github.com/dabson2020/Projects-Portfolio/assets/45830157/8477e28c-d142-402a-84f0-32ac62969917)
