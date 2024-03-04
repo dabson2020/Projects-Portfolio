@@ -108,7 +108,7 @@ In other words, the best possible accuracy is 100% (or 1) and the worst possible
 
 **Note** : In classification, the class of interest is considered the positive class.
 
-## :thumbsup -> Solution
+## :thumbsup: -> Solution
 
 The following processes were carried out
 
