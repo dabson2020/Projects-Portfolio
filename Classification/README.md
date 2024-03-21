@@ -189,3 +189,5 @@ The following processes were carried out
 
       **Model Performance on Unknown Data:**
       When tested on unknown data, the model accuracy is 93.582%
+
+## 3. Twitter Analysis
