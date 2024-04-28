@@ -1,5 +1,7 @@
 ETL and Data Analysis with Python and SQL
 
+![alt text](<data analysis.jpg>)
+
 This project is sub-divided into:
 - Loading of Data with Kaggle API with python
 - Clean the data by:
