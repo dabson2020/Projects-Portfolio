@@ -1,7 +1,7 @@
 
 # This project loads data with Kaggle API, cleans the data, and load the data into SQL Server for further analysis
 
-# %%
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
