@@ -1,6 +1,6 @@
-# HR Analytics with Tableau
+# HR Analytics with Tableau and Power BI
 
-This project aims to analyze HR data using Tableau to gain insights into various key performance indicators (KPIs) related to attrition, education, job satisfaction, and gender.
+This project aims to analyze HR data using Tableau and Power BI to gain insights into various key performance indicators (KPIs) related to attrition, education, job satisfaction, and gender.
 
 ## KPIs: 
 In this section, we counted the number of employees, the attrition count, attrition rate, active employees and average age of employees.
@@ -22,9 +22,13 @@ In this section, we focus on job satisfaction ratings. We analyze the distributi
 Here, we examine the attrition rates based on gender. We visualize the attrition trends for male and female employees separately and compare the rates. This analysis helps in identifying any gender-related patterns in attrition and enables organizations to address any gender-specific challenges.
 
 Here is a visuals of the analysis.
-
+## With Tableau
 ![alt text](<hr analytics.png>)
+
+## With PowerBI
+![alt text](hr_powerbi.png)
 
 ## Conclusion
 
-In conclusion, this project leverages Tableau to analyze HR data and gain insights into key aspects of attrition, education, job satisfaction, and gender. By understanding these factors, organizations can make data-driven decisions to improve employee retention and satisfaction.
+
+In conclusion, this project leverages Tableau and Power BI to analyze HR data and gain insights into key aspects of attrition, education, job satisfaction, and gender. By understanding these factors, organizations can make data-driven decisions to improve employee retention and satisfaction.
